@@ -19,3 +19,45 @@
 .sidenav li a:hover {
   background: #B07dfb;
 }
+
+@keyframes seta {
+  from {
+    right: 2rem;
+  }
+
+  to {
+    right: 1rem;
+  }
+}
+
+@media (max-width: 760px) {
+  .sidenav {
+    padding: 0 2rem;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    position: relative;
+  }
+
+  .sidenav::after {
+    content: "→";
+    position: absolute;
+    top: 5px;
+    right: 2rem;
+    color: rgba(0, 0, 0, 0.3);
+    animation: seta .5s ease-in 0s infinite alternate;
+  }
+
+  .sidenav ul {
+    display: flex;
+
+  }
+
+  .sidenav ul li {
+    flex: 1 0 3.75rem;
+  }
+
+  .sidenav li a {
+    margin: 2rem 2rem 2rem 0;
+  }
+}
