@@ -1,0 +1,87 @@
+.content {
+  grid-area: content;
+  max-width: 56.25rem;
+  margin: 0 auto;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+/* Classe utilitária */
+.coluna-wide {
+  grid-column: 1/-1;
+}
+
+.content-img1 {
+  grid-row: span 2;
+  align-self: end;
+}
+
+.content-img2 {
+  align-self: end;
+}
+
+.content p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  letter-spacing: -0.005rem;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.titulo {
+  color: #B07DFB;
+}
+
+.titulo h1 {
+  font-size: 3.75rem;
+  line-height: 1;
+  font-weight: bold;
+}
+
+.titulo span {
+  font-size: 0.875rem;
+  font-style: italic;
+}
+
+.caracteristicas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: flex-start;
+  justify-content: end;
+}
+
+.caracteristicas>div {
+  width: 5rem;
+  text-align: center;
+  background: linear-gradient(135deg, #8844ee, #B07dfd);
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px 0px rgba(44, 44, 44, 0.15);
+  position: relative;
+}
+
+.caracteristicas span {
+  display: block;
+  color: #B07DFB;
+}
+
+.numero {
+  color: #B07DFB;
+  font-size: 3rem;
+  line-height: 1;
+  margin: 0.5rem auto;
+}
+
+.rotulo {
+  background: #FFFFFF;
+  border-radius: 0 0 5px 5px;
+  padding: 0.25rem 0;
+  position: relative;
+  top: 2px;
+}
+
+.informacoes {
+  display: grid;
+  gap: 2rem;
+}

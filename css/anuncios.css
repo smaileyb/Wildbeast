@@ -1,0 +1,13 @@
+.anuncios {
+  grid-area: anuncios;
+  background: #FAFBFC;
+  display: grid;
+  align-content: start;
+  padding: 2rem;
+  gap: 2rem;
+
+}
+
+.anuncio-item img {
+  border-radius: 5px;
+}

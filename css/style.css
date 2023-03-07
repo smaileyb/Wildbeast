@@ -1,3 +1,9 @@
-body {
-  background: rgba(0,0,0,.1)
-}
+@import "./global.css";
+
+
+@import "./estrutura.css";
+@import "./header.css";
+@import "./sidenav.css";
+@import "./content.css";
+@import "./anuncios.css";
+@import "./footer.css";
